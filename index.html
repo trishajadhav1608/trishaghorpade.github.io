@@ -9,6 +9,12 @@
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(function(){
+				$("#includedContent").load("timeline.html");
+			});
+		</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -41,7 +47,8 @@
 
 					<section id="oneAndHalf">
 						<!-- added	timeline -->
-						<div w3-include-html="\timeline.html"></div>
+						<!-- <div w3-include-html="\timeline.html"></div> -->
+						<div id="includedContent"></div>
 					</section>
 
 				
